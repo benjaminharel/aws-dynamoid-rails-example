@@ -1,5 +1,8 @@
-class User <  AWS::Record::HashModel
-	string_attr :name
+class User 
+ include Dynamoid::Document
+
+  field :name
+  field :email
 end
 
 #AWS::Record::Base for simple db
